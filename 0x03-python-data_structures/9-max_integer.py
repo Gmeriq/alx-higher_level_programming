@@ -16,6 +16,5 @@ def max_integer(my_list=[]):
                 j += 1
 
             i -= 1
-       
     return new_list[-1]
     return None
