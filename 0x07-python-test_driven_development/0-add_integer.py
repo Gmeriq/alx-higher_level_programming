@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Define a function to add two integers
+
 Returns addition of the two integers
 """
 
