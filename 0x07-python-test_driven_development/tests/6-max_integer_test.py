@@ -4,6 +4,7 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
+
 class TestMaxInteger(unittest.TestCase):
     def test_empty_list(self):
         """
@@ -25,6 +26,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([2, 3, 1]), 3)
         self.assertEqual(max_integer([3, 1, 2]), 3)
         self.assertEqual(max_integer([3, 2, 1]), 3)
+
     def test_floats(self):
         """Test a list of floats."""
         floats = [1.53, 6.33, -9.123, 15.2, 6.0]
