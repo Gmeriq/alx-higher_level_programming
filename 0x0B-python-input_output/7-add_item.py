@@ -1,19 +1,19 @@
-#!/usr/b#!/usr/bin/python3
-""" Add Arguments to Python List Module """
+#!/usr/bin/python3
+"""Adds all arguments to list"""
 
 
 if __name__ == "__main__":
     from sys import argv
-    save_to = __import__('5-save_to_json_file').save_to_json_file
-    load_from = __import__('6-load_from_json_file').load_from_json_file
+    save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
+    load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
-    args = []
+    data = []
     try:
-        args = load_from("add_item.json")
-        for elem in argv[1:]:
-            args.append(elem)
-        save_to(args, "add_item.json")
+        data = load_from_json_file("add_items.json")
+        for item in argv[1:]:
+            data.append(item)
+        save_to_json_file(data, "add_item.json")
     except FileNotFoundError:
-        for elem in argv[1:]:
-            args.append(elem)
-        save_to(args, "add_item.json")
+        for item in argv[1:]:
+            data.append(item)
+        save_to_json_file(data, "add_item.json")
