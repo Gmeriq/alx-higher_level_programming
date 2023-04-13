@@ -8,9 +8,9 @@ if (process.argv[1] === null)
 }
 else if (process.argv[2] === null)
 {
-    console.log(process.argv[1] "is undefined");
+    console.log("${process.argv[1]} is undefined");
 }
 else
 {
-    console.log(process.argv[1] "is" process.argv[2]);
+    console.log("${process.argv[1]} is ${process.argv[2]}");
 }
