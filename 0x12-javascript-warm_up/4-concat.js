@@ -2,16 +2,18 @@
 
 //Prints arguments in a format
 
+const none = "udefined";
+const argv = process.argv;
 
-if (process.argv[2] === null)
+if (!argv[2])
 {
-    console.log("undefine is undefined");
+    console.log('${none} is ${none}');
 }
-else if (process.argv[3] === null)
+else if (!argv[3])
 {
-    console.log("${process.argv[2]} is undefined");
+    console.log("${argv[2]} is ${none}");
 }
 else
 {
-    console.log("${process.argv[3]} is ${process.argv[2]}");
+    console.log("${argv[2]} is ${argv[3]}");
 }
