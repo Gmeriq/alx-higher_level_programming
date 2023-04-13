@@ -1,7 +1,13 @@
-#!/opt/homebrew/bin/node
+#!/usr/bin/node
 
 // Print first argument
 
-const first = process.argv[0];
-
-console.log(first);
+const argv = process.argv;
+if (argv === null)
+{
+    console.log("No argument");
+}
+else
+{
+    console.log(argv[0]);
+}
