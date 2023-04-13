@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/node
+#!/usr/bin/node
 
 // Converts arguments to numbers
 
