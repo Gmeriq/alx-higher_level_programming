@@ -1,6 +1,6 @@
 #!/opt/homebrew/bin/node
 
-//Print first argument
+// Print first argument
 
 const first = process.argv[0];
 

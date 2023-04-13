@@ -1,8 +1,7 @@
 #!/usr/bin/node
 
-//Print string saved in variable
+// Print string saved in variable
 
-let myVar;
-myVar = "JavaScript is amaizing";
+const myVar = 'JavaScript is amaizing';
 
 console.log(myVar);
