@@ -1,5 +1,7 @@
+#!/usr/bin/node
 
 //Prints arguments in a format
+
 
 if (process.argv[2] === null)
 {
