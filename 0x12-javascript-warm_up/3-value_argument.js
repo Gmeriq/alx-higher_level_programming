@@ -3,11 +3,11 @@
 // Print first argument
 
 const argv = process.argv;
-if (argv[1] === null)
+if (!argv[2])
 {
     console.log("No argument");
 }
 else
 {
-    console.log(argv[1]);
+    console.log(argv[2]);
 }
