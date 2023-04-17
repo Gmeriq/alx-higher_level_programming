@@ -10,7 +10,7 @@ def main():
     """Filters by N"""
     db = MySQLdb.connect(host='localhost', port=3306,
                          user=argv[1], passwd=argv[2], db=argv[3])
-    curs = database.cursor()
+    curs = db.cursor()
     query = 'SELECT * FROM states WHERE name LIKE BINARY"N%" ORDER BY id ASC'
     curs.execute(query)
     nstates = curs.fetchall()
