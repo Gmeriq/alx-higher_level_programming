@@ -5,7 +5,7 @@
 import MySQLdb
 from sys import argv
 
-if __name__ == "__main__":
+def main():
     db = MySQLdb.connect(host='localhost', port=3306,
                          user=argv[1], passwd=argv[2], db=argv[3])
     curs = database.cursor()
@@ -18,3 +18,6 @@ if __name__ == "__main__":
 
     curs.close()
     db.close()
+
+if __name__ == "__main__":
+    main()
