@@ -5,6 +5,7 @@
 import MySQLdb
 from sys import argv
 
+
 def main():
     """Print state from argument"""
 
@@ -21,6 +22,7 @@ def main():
 
     curs.close()
     db.close()
+
 
 if __name__ == '__main__':
     main()

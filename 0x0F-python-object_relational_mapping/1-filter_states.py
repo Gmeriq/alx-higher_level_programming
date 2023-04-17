@@ -5,7 +5,9 @@
 import MySQLdb
 from sys import argv
 
+
 def main():
+    """Filters by N"""
     db = MySQLdb.connect(host='localhost', port=3306,
                          user=argv[1], passwd=argv[2], db=argv[3])
     curs = database.cursor()
@@ -18,6 +20,7 @@ def main():
 
     curs.close()
     db.close()
+
 
 if __name__ == '__main__':
     main()
