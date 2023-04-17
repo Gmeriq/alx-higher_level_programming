@@ -12,7 +12,7 @@ from sys import argv
 if __name__ = '__main__':
     username, password, database = argv[1:]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
-                           .format(argv[1], argv[2], agv[3]),
+                           .format(username, password, database),
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
