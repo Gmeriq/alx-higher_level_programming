@@ -12,7 +12,7 @@ if __name__ == "__main__":
     curs.execute("SELECT cities.id, cities.name, states.name {} {} {}".format(
         "FROM cities",
         "LEFT OUTER JOIN states ON cities.states_id=states.id",
-        "ORDER BYcities.id ASC"))
+        "ORDER BY cities.id ASC"))
 
     data = curs.fetchall()
     for row in data:
