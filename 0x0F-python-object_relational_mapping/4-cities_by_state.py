@@ -12,7 +12,7 @@ if __name__ = "__main__":
     cur = db.cursor()
     query = "SELECT cities.id, cities.name, states.name {} {} {}".format(
             "FROM cities",
-            "LEFT OUTER JOIN states on cities.state_id=states.id",
+            "LEFT OUTER JOIN states ON cities.state_id=states.id",
             "ORDER BY cities.id ASC")
     cur.execute(query)
     data = cur.fetchall()
