@@ -11,7 +11,7 @@ if __name__ == "__main__":
     curs = db.cursor()
     query = "SELECT cities.id, cities.name, states.name {} {} {}".format(
             "FROM cities",
-            "LEFT OUTER JOIN states ON cities.states_id=states.id",
+            "INNER JOIN states ON cities.states_id=states.id",
             "ORDER BY cities.id ASC")
     
     curs.execute(query)
